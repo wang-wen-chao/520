@@ -175,22 +175,25 @@
 	<script src="js/CSS3DRenderer.js"></script>
 
 	<div id="container"></div>
-	<audio autoplay="" loop="">
-		<source src="http://www.ytmp3.cn/down/72794.mp3">
-	</audio>
+	<!-- <audio autoplay="" loop="">
+		<source src="bgMusic.mp3">
+	</audio> -->
+	<audio  autoplay loop  id="myAudio">
+		<source src="bgMusic.mp3" type="audio/mpeg">
+	  </audio>
 	<div id="menu">
-		<button id="table">表格</button>
-		<button id="sphere">球球</button>
-		<button id="helix">螺旋</button>
-		<button id="grid">格子</button>
+		<button id="table" onclick="document.getElementById('myAudio').play()">表格</button>
+		<button id="sphere" onclick="document.getElementById('myAudio').play()">球球</button>
+		<button id="helix" onclick="document.getElementById('myAudio').play()">螺旋</button>
+		<button id="grid" onclick="document.getElementById('myAudio').play()">格子</button>
 	</div>
 
-	<div class="show_info animated" style="display:none;">
+	<!-- <div class="show_info animated" style="display:none;">
 		<div class="info_my">
 			<img width=200px src="img/c.png" />
 		</div>
 		<div class="intro">最美的欣♥</div>
-	</div>
+	</div> -->
 
 	<script>
 		var personArray = new Array;
